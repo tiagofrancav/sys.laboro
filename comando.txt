@@ -1,0 +1,36 @@
+primeiro passo criando o ambeinte virtual
+
+python -m venv venv
+
+.\venv\Scripts\activate
+
+pip install django
+
+pip freeze > requirements.txt
+
+criando de fato o projeto de forma incial, 
+
+django-admin startproject core .
+
+python manage.py migrate
+
+python manage.py createsuperuser
+    user:
+    email:
+    password:
+
+python manage.py runserver
+    acesse o local: 129.0.0.(coloca /admin no final) (exemplo)
+    user:
+    password:
+
+python manage.py startapp "nome do app sem as aspas"
+
+registra no django admin
+python manage.py makenimigrations
+
+python manage.py migrate
+
+python manage.py runserver
+
+
